@@ -4,9 +4,9 @@ from sqlalchemy.sql import text
 def seed_restaurants():
     nikita_burger = Restaurant(
       owner_id=1,
-      name="In n Out",
+      name="In-n-Out",
       address="32060 Union Landing Blvd, Union City, CA 94587",
-      phone_number="(800)786-1000",
+      phone_number="8007861000",
       cuisine="American",
       description="Classic burger chain serving customizable burgers, hand-cut fries & shakes.",
       hours_of_operation="Monday-Friday: 9AM-11:59PM",
