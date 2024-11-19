@@ -1,0 +1,227 @@
+.details-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detailspage-main-img {
+  width: 1000px;
+  height: 500px;
+  border-radius: 20px;
+}
+
+.title-address {
+  margin-left: 24px;
+  margin-top: 12px;
+}
+
+.description {
+  width: 720px;
+  font-size: 20px;
+  margin-left: 24px;
+}
+
+.starRating {
+  margin-left: 24px;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-items: center;
+}
+
+.menu-item-image {
+  width: 100%;
+  height: 50%;
+  border-radius: 12px;
+}
+
+.menu-item-name {
+  font-weight: 600;
+}
+
+.dot {
+  background-color: grey;
+  transition-duration: 2000ms;
+}
+
+.review-btn-con {
+  display: flex;
+
+  gap: 10px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.review-btn-con button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.review-btn-con-for-details {
+  padding-left: 22px;
+}
+
+.owned-restaurant-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.update-restaurant {
+  width: 175px;
+  height: 50px;
+  border-radius: 12px;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+}
+
+.lol-class {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.update-restaurant-link {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  width: 500px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-items-con-l {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-right: 65px;
+}
+
+.cart-count-span {
+  width: 40px !important;
+  position: absolute !important;
+  margin-top: 8px;
+  margin-left: 17%;
+}
+
+.create-menu-restaurant {
+  text-decoration: none;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+}
+
+#large-details-container {
+  border: 1px solid black;
+  width: 900px;
+  border-radius: 12px;
+  padding-left: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.menu-item-container {
+  width: 20%;
+}
+#details-section {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+  width: 100%;
+}
+.menu-item-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+@media screen and (max-width: 1023px) {
+  .details-container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+  .detailspage-main-img {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .details-container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    right: 5%;
+    margin-top: 160px !important;
+    border-radius: 20px !important;
+  }
+  .details-container h1 {
+    font-size: 30px;
+    margin-left: 48px;
+  }
+  .detailspage-main-img {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 18px;
+  }
+  #details-section {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    align-content: space-around;
+  }
+  .description {
+    text-align: center;
+    margin-right: 10%;
+  }
+  .title-address {
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .menu-item-container {
+    width: 70%;
+  }
+  #large-details-container {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 973px) {
+  #large-details-container {
+    border: 1px solid black;
+    width: 95%;
+  }
+}
