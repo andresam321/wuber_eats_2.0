@@ -1,6 +1,7 @@
 import os
 from flask import Flask, render_template, request, session, redirect
 from flask_cors import CORS
+from dotenv import load_dotenv
 from flask_migrate import Migrate
 from flask_wtf.csrf import CSRFProtect, generate_csrf
 from flask_login import LoginManager
@@ -10,6 +11,8 @@ from .api.auth_routes import auth_routes
 from .api.restaurant_routes import restaurant_routes
 from .seeds import seed_commands
 from .config import Config
+
+load_dotenv()
 
 app = Flask(__name__, static_folder='../react-vite/dist', static_url_path='/')
 
