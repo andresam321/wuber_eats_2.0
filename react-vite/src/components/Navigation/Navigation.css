@@ -1,12 +1,12 @@
-@font-face {
+/* @font-face {
   font-family: Itim;
   src: url("../../../public/itim.ttf");
 }
 
 @font-face {
   font-family: Inter;
-  src: url("../../../public/inter.ttf");
-}
+  src: url("../../../public/inter.ttf"); */
+/* } */
 
 /* TODO: Add sitewide styles */
 .profile-dropdown {

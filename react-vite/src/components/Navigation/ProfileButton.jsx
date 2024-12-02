@@ -9,8 +9,8 @@ import "./Navigation.css";
 // import { useNavigate } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 // import bblDrizzy from "../../../public/bb2ca70dc88b4fd38ed9355c07521f30.png";
-import crappstore from "../../../public/appstorebadge.png";
-import purpapplogo from "../../../public/purpapplogo.png";
+import crappstore from "../Images/appstorebadge.png";
+import purpapplogo from "../Images/purpapplogo.png";
 import RickModal from "../rick/RickModal";
 function ProfileButton() {
   // let navigate = useNavigate();

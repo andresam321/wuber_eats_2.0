@@ -2,11 +2,10 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import ProfileButton from "./ProfileButton";
 import "./Navigation.css";
-import DarkSiteLogo from "../../../public/hamberderDarkLogo.png";
-import LightSiteLogo from "../../../public/hamberderLightLogo.png";
-import magnifyingglasssolid from "../../../public/magnifying-glass-solid.png";
+import DarkSiteLogo from "../Images/hamberderDarkLogo.png";
+import LightSiteLogo from "../Images/hamberderLightLogo.png";
 import { useDispatch, useSelector } from "react-redux";
-import cart from "../../../public/cart.png";
+import cart from "../Images/cart.png";
 import { useEffect, useRef, useState } from "react";
 import {
   addToCartThunk,

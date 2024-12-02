@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import map from "../../../public/map.png";
+import map from "../Images/map.png";
 import "./Checkout.css";
 import { useNavigate } from "react-router-dom";
 

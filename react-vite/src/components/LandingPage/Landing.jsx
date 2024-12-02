@@ -3,13 +3,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadRestaurantsThunk } from "../../redux/restaurant";
 import { MdOutlineStar } from "react-icons/md";
 import { RiArrowRightLine } from "react-icons/ri";
-import hamberderLightLogo from "../../../public/hamberderLightLogo.png";
+import hamberderLightLogo from "../Images/hamberderLightLogo.png";
 import "./Landing.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Carousel } from "../Carousel/Carousel";
 import RickModal from "../rick/RickModal";
 import OpenModalMenuItem from "../Navigation/OpenModalMenuItem";
-import wumbo from "../../../public/wumboburger.png";
+import wumbo from "../Images/wumboburger.png";
 function Landing() {
   let restaurants = useSelector((state) => state.restaurantReducer);
   restaurants = Object.values(restaurants);

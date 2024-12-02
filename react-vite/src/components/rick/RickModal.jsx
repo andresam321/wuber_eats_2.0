@@ -1,4 +1,4 @@
-import rr from "../../../public/rr.mp4";
+import rr from "../Images/rr.mp4";
 function RickModal() {
   return (
     <>

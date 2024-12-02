@@ -1,4 +1,4 @@
-import andresam321 from "../../../public/andresam321.png";
+import andresam321 from "../Images/andresam321.png";
 import "./About.css";
 import { useNavigate } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
