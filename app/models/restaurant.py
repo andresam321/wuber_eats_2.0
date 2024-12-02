@@ -42,7 +42,7 @@ class Restaurant(db.Model):
                 "description": self.description,
                 "hours_of_operation": self.hours_of_operation,
                 "delivery_radius": self.delivery_radius,
-                "cover_image": self.cover_image,
+                "cover_image": self.cover_image.replace("http://", "https://"),
                 'reviews': [review.to_dict() for review in self.reviews],
                 'created_at': self.created_at,
                 'updated_at': self.updated_at
