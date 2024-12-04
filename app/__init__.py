@@ -18,7 +18,13 @@ from werkzeug.middleware.proxy_fix import ProxyFix
 
 app = Flask(__name__, static_folder='../react-vite/dist', static_url_path='/')
 
-Talisman(app, force_https=True)
+csp = {
+    'default-src': ["'self'"],
+    'img-src': ["'self'", "https:", "data:"],  # Allow HTTPS and data URIs for images
+}
+
+# Apply Flask-Talisman with the custom CSP
+Talisman(app, content_security_policy=csp, force_https=True)
 
 app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 # Setup login manager
