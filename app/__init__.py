@@ -11,11 +11,16 @@ from .api.auth_routes import auth_routes
 from .api.restaurant_routes import restaurant_routes
 from .seeds import seed_commands
 from .config import Config
+from flask_talisman import Talisman
+from werkzeug.middleware.proxy_fix import ProxyFix
 
-load_dotenv()
+
 
 app = Flask(__name__, static_folder='../react-vite/dist', static_url_path='/')
 
+Talisman(app, force_https=True)
+
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
 # Setup login manager
 login = LoginManager(app)
 login.login_view = 'auth.unauthorized'
@@ -49,6 +54,7 @@ CORS(app)
 def https_redirect():
     if os.environ.get('FLASK_ENV') == 'production':
         if request.headers.get('X-Forwarded-Proto') == 'http':
+            print("Headers:", dict(request.headers))
             url = request.url.replace('http://', 'https://', 1)
             code = 301
             return redirect(url, code=code)

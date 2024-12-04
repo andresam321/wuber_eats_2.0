@@ -75,20 +75,20 @@ function Landing() {
         </div>
         <div className="wube-cards" style={{ backgroundColor: "grey" }}>
           <span
-            className="wubeAdText"
-            style={{
-              fontSize: "20px",
-              textAlign: "center",
-              marginLeft: "300px",
-            }}
+            // className="wubeAdText"
+            // style={{
+            //   fontSize: "20px",
+            //   textAlign: "center",
+            //   marginLeft: "300px",
+            // }}
           >
-            Willem Dafoe ordered here once. It was so good, bro hit this pose
+            Willem Dafoe ordered here once. It was so good!
           </span>
-          <img
+          {/* <img
             src="https://pbs.twimg.com/media/GASGdkPWgAEpnj_.jpg"
             alt="willem dapose"
             style={{ marginRight: "42px", right: "22px", position: "inherit" }}
-          />
+          /> */}
           {/* <OpenModalMenuItem style={{}} */}
           {/* // itemText={ */}
           <button
